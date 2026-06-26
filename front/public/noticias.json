@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "categoria": "Tecnologia",
+    "titulo": "IA generativa já substitui 30% dos desenvolvedores júnior",
+    "conteudo": "Relatório do Fórum Econômico Mundial aponta que ferramentas como o GitHub Copilot e o ChatGPT realizaram tarefas de codificação que antes exigiam equipes inteiras de juniores. Empresas de tecnologia reduziram contratações iniciais e investem em 'desenvolvedores-gerentes' que revisam código gerado por IA. A previsão é que 50% das vagas de entrada sejam automatizadas até 2028.",
+    "imagem": "https://picsum.photos/id/91/800/450",
+    "data_publicacao": "13/05/2026",
+    "quem_postou": "Aline Moraes"
+  },
+  {
+    "id": 2,
+    "categoria": "Economia",
+    "titulo": "Criptomoedas despencam após regulação global",
+    "conteudo": "O G20 anunciou novas regras para exchanges e stablecoins, causando queda de 40% no mercado. Especialistas preveem migração para ativos lastreados em ouro digital.",
+    "imagem": "https://picsum.photos/id/26/800/450",
+    "data_publicacao": "25/01/2020",
+    "quem_postou": "Paulo Guedes"
+  },
+  {
+    "id": 3,
+    "categoria": "Ciência",
+    "titulo": "Cérebro humano é parcialmente simulado em supercomputador",
+    "conteudo": "Pesquisadores europeus conseguiram replicar o funcionamento de 1 bilhão de neurônios, abrindo caminho para tratamentos de Alzheimer e Parkinson via IA.",
+    "imagem": "https://picsum.photos/id/107/800/450",
+    "data_publicacao": "24/10/2020",
+    "quem_postou": "Albert Einstein"
+  },
+  {
+    "id": 4,
+    "categoria": "Esportes",
+    "titulo": "Atletas-robôs competem nas primeiras Olimpíadas de IA",
+    "conteudo": "Androides humanoides disputaram modalidades como futebol e corrida; organizadores planejam incluir a categoria nos Jogos Olímpicos de 2032.",
+    "imagem": "https://picsum.photos/id/96/800/450",
+    "data_publicacao": "24/09/2020",
+    "quem_postou": "Craque Neto"
+  },
+  {
+    "id": 5,
+    "categoria": "Cultura",
+    "titulo": "Filme feito inteiramente por IA vence festival de Cannes",
+    "conteudo": "A produção 'Ecos Sintéticos' utilizou roteiro, atuações e trilha sonora gerados por inteligência artificial, gerando debate sobre o futuro da arte.",
+    "imagem": "https://picsum.photos/id/88/800/450",
+    "data_publicacao": "24/07/2020",
+    "quem_postou": "Tati Quebra Barraco"
+  },
+  {
+    "id": 6,
+    "categoria": "Saúde",
+    "titulo": "Vacina brasileira contra dengue tem 95% de eficácia",
+    "conteudo": "Após testes em larga escala, o imunizante desenvolvido pelo Instituto Butantan mostra resultados promissores e deve estar disponível no SUS ainda este ano.",
+    "imagem": "https://picsum.photos/id/101/800/450",
+    "data_publicacao": "15/02/2025",
+    "quem_postou": "Renato do Grau"
+  },
+  {
+    "id": 7,
+    "categoria": "Meio Ambiente",
+    "titulo": "Reflorestamento da Amazônia atinge maior índice em década",
+    "conteudo": "Dados do INPE mostram que o desmatamento caiu 40% e o plantio de mudas nativas ultrapassou 10 milhões de hectares.",
+    "imagem": "https://picsum.photos/id/104/800/450",
+    "data_publicacao": "03/06/2024",
+    "quem_postou": "IBAMA"
+  },
+  {
+    "id": 8,
+    "categoria": "Moda",
+    "titulo": "Tecidos sustentáveis dominam semana de moda de Paris",
+    "conteudo": "Materiais reciclados e tingimento natural foram tendência absoluta nos desfiles; marcas abandonam o uso de poliéster.",
+    "imagem": "https://picsum.photos/id/106/800/450",
+    "data_publicacao": "12/10/2025",
+    "quem_postou": "O Diabo Veste Prada"
+  },
+  {
+    "id": 9,
+    "categoria": "Educação",
+    "titulo": "Escolas de tempo integral se tornam padrão no país",
+    "conteudo": "Lei aprovada em 2025 universaliza a jornada de 7 horas diárias; alunos têm acesso a alimentação, arte e robótica.",
+    "imagem": "https://picsum.photos/id/20/800/450",
+    "data_publicacao": "22/01/2026",
+    "quem_postou": "Evandro Guedes"
+  },
+  {
+    "id": 10,
+    "categoria": "Transporte",
+    "titulo": "Trem hiperloop liga São Paulo ao Rio em 30 minutos",
+    "conteudo": "Após anos de testes, a cápsula de alta velocidade começa a operar comercialmente; passagem custará R$ 150,00.",
+    "imagem": "https://picsum.photos/id/111/800/450",
+    "data_publicacao": "07/03/2026",
+    "quem_postou": "Ayrton Senna"
+  }
+]
