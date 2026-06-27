@@ -51,15 +51,9 @@
       <div style="margin-top: 40px; margin-bottom: 60px;">
         <hr style="border: 0; border-top: 1px solid #e2e8f0; margin-bottom: 30px;">
         
-        <div style="text-align: center;" v-if="!adminLogado && !mostrarLogin">
-          <button class="btn-admin" @click="mostrarLogin = true">🔒 Acessar Área do Administrador</button>
-        </div>
-
         <div class="painel-admin" v-if="mostrarLogin && !adminLogado">
-          <h3 style="margin-bottom: 10px; color: #0f172a;">Autenticação do Sistema</h3>
-          <p style="color: #64748b; font-size: 14px; margin-bottom: 20px;">
-            Usuário: <strong>admin</strong> | Senha: <strong>123</strong>
-          </p>
+          <h3 style="margin-bottom: 20px; color: #0f172a;">Autenticação do Sistema</h3>
+          
           <div class="form-grupo">
             <label>Usuário:</label>
             <input type="text" v-model="usuarioInput">
@@ -144,7 +138,10 @@ export default {
         titulo: '',
         categoria: '',
         conteudo: ''
-      }
+      },
+      
+      // guarda o histórico de teclas digitadas para o comando 
+      sequenciaTeclas: ''
     }
   },
   methods: {
@@ -218,6 +215,20 @@ export default {
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
       }, 50);
     },
+    capturarTeclado(evento) {
+      if (evento.target.tagName === 'INPUT' || evento.target.tagName === 'TEXTAREA') {
+        return;
+      }
+
+      this.sequenciaTeclas += evento.key.toLowerCase();
+      this.sequenciaTeclas = this.sequenciaTeclas.slice(-5); // Guarda apenas as últimas 5 teclas ('admin')
+
+      if (this.sequenciaTeclas === 'admin') {
+        this.mostrarLogin = true;
+        this.sequenciaTeclas = '';
+        alert("Área do Administrador ativada! 🔒");
+      }
+    },
     async salvarNoticia() {
       if (this.modoEdicao) {
         try {
@@ -280,6 +291,16 @@ export default {
   },
   mounted() {
     this.carregarNoticias();
+    
+    window.addEventListener('keydown', this.capturarTeclado);
+
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('acesso') === 'secreto') {
+      this.mostrarLogin = true;
+    }
+  },
+  beforeUnmount() {
+    window.removeEventListener('keydown', this.capturarTeclado);
   }
 }
 </script>

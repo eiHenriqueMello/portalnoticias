@@ -290,3 +290,37 @@ body {
   resize: vertical;
   min-height: 120px;
 }
+
+@media (max-width: 768px) {
+  
+  .container {
+    padding: 0 16px !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .grade {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 32px !important;
+  }
+
+  .area-noticia, .painel-admin {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .img-main {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .btn-admin, .btn-deletar {
+    width: 100% !important;
+    padding: 14px !important;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
