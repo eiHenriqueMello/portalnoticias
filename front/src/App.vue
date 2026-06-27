@@ -113,7 +113,7 @@
           <button class="btn-deletar" style="background: #475569;" @click="adminLogado = false">Sair do Painel Admin 🔓</button>
         </div>
       </div>
-      </div>
+    </div>
 
     <AppFooter />
   </div>
@@ -158,7 +158,7 @@ export default {
     },
     async carregarNoticias() {
       try {
-        const resposta = await fetch('http://localhost:3000/api/noticias');
+        const resposta = await fetch('https://portal-noticias-back.onrender.com/api/noticias');
         const dados = await resposta.json();
         this.noticias = dados;
         if (dados.length > 0) {
@@ -221,7 +221,7 @@ export default {
     async salvarNoticia() {
       if (this.modoEdicao) {
         try {
-          const resposta = await fetch(`http://localhost:3000/api/noticias/${this.idSendoEditado}`, {
+          const resposta = await fetch(`https://portal-noticias-back.onrender.com/api/noticias/${this.idSendoEditado}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(this.novaNoticia)
@@ -237,7 +237,7 @@ export default {
         }
       } else {
         try {
-          const resposta = await fetch('http://localhost:3000/api/noticias', {
+          const resposta = await fetch('https://portal-noticias-back.onrender.com/api/noticias', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -264,7 +264,7 @@ export default {
       if (!confirm("Tem certeza que deseja deletar permanentemente esta notícia do SQLite?")) return;
       
       try {
-        const resposta = await fetch(`http://localhost:3000/api/noticias/${id}`, {
+        const resposta = await fetch(`https://portal-noticias-back.onrender.com/api/noticias/${id}`, {
           method: 'DELETE'
         });
 
